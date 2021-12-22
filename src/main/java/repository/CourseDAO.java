@@ -13,6 +13,9 @@ public class CourseDAO {
         Course course1 = new Course(1,"MAP", 11, 5, 5);
         Course course2 = new Course(2,"BD", 11, 5, 6);
         Course course3 = new Course(3,"LP", 12, 5, 6);
+        course1.setStudentsEnrolledId(new ArrayList<>(List.of(1,2)));
+        course2.setStudentsEnrolledId(new ArrayList<>(List.of(3,2)));
+        course3.setStudentsEnrolledId(new ArrayList<>(List.of(1,3)));
         courses.add(course1);
         courses.add(course2);
         courses.add(course3);
